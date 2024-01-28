@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: #4B4A54;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00C9C8;
+        }
+
+        .image-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-box {
+            margin: 10px;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .table-section {
+            height: 100vh;
+            background-color: #A9CEC2;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4B4A54;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="acad_achv.html">Academic Achievements</a>
+        <a href="details.html">Details</a>
+        <a href="portfolio.html">WebP Portfolio</a>
+    </nav>
+
+    <section id="images" class="image-section">
+        <h2>My activities</h2>
+        <div class="image-container">
+            <div class="image-box">
+                <img src="images/activities/webp.jpeg" style="width: 400px;" alt="Web Programming">
+            </div>
+            <div class="image-box">
+                <img src="images/activities/soft.jpeg" style="width: 400px;" alt="Software Programming">
+            </div>
+            <div class="image-box">
+                <img src="images/activities/director.jpg" style="width: 250px;" alt="Interpreter">
+            </div>
+        </div>
+        <h3>I do pretty much anything that I can do as long as it can give me experience at life and money obviously.</h3>
+        <h3>My adaptability in the field of technology is actually true. I have tried a lot of fields in technology and therefore I can just adjust to wherever field I'm placed in.</h3>
+        <h4>The pictures above prove my statements. There are more I can show..</h4>
+    </section>
+
+    <section id="tables" class="table-section">
+        <h2>Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Family Members</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Myself</td>
+                    <td>Fadzar Ainurizky</td>
+                </tr>
+                <tr>
+                    <td>Mother</td>
+                    <td>Yeni Nurlina</td>
+                </tr>
+                <tr>
+                    <td>Father</td>
+                    <td>Abdul Kholik</td>
+                </tr>
+                <tr>
+                    <td>Sister #1</td>
+                    <td>Al-mira Nurlaily Azzahra</td>
+                </tr>
+                <tr>
+                    <td>Sister #2</td>
+                    <td>Al-fira Hasna Kamila</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>
