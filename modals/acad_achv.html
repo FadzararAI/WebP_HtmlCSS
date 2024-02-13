@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imgmodal.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: #4B4A54;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00C9C8;
+        }
+
+        .article-section {
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .article-content {
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .article-img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .article-text {
+            max-width: 400px; /* Adjust the width of the text container as needed */
+            text-align: left; /* Align text to the left */
+        }
+
+        .reverse-order .article-content {
+            flex-direction: row-reverse;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="acad_achv.html">Academic Achievements</a>
+        <a href="details.html">Details</a>
+        <a href="portfolio.html">WebP Portfolio</a>
+    </nav>
+
+    <section class="article-section" style="background-color: #7278D0;">
+        <div class="article-content">
+            <img src="images/comp/zak.jpeg" class="article-img" style="width: 380px">
+            <div class="article-text">
+                <h2 style="font-size:35px;color: #36706E;-webkit-text-stroke-width: 0.5px;-webkit-text-stroke-color: black;">Zakathon</h2>
+                <p>The first winner among competitors in creating an innovation in zakat.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-section reverse-order" style="background-color: #A150A1;">
+        <div class="article-content">
+            <img src="images/comp/mikrotik.jpg" class="article-img" style="width: 300px;margin-left: 10px;">
+            <div class="article-text">
+                <h2>Olimpiade Jaringan MikroTik-APJII</h2>
+                <p>News outlet evidence of us getting the 6th position.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="article-section" style="background-color: #9DB1FF">
+        <div class="article-content">
+            <img style="width: 300px" src="images/comp/ITSoft.jpg" class="article-img">
+            <div class="article-text">
+                <h2>IT Software Solution for Business</h2>
+                <p>A phone picture of me and my senior winning in each of our own competition category we competed in.</p>
+            </div>
+        </div>
+    </section>
+    <div id="modalbg" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-popup" id="imgs">
+        <div style="height: 150px;"></div>
+    </div>
+    <script src="modalexecutor.js"></script>
+</body>
+</html>

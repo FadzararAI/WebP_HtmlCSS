@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+	<title>Fadzarar's Home</title>
+	<link rel="stylesheet" href="nav.css">
+	<style>
+		.navcontainer{
+			width: auto;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.topnav{
+			display: flex;
+			flex-direction: row;
+			overflow: hidden;
+			background-color: transparent;
+			margin-right: 5%;
+		}
+		.topnav a{
+			margin-left: 3rem;
+			float: right;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		.topnav a:hover {
+			background-color: #00C9C8;
+			color: white;
+		}
+		html, body{
+			margin: 0;
+			height: 100vh;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		.brand a{
+			font-weight: bolder;
+			font-size: 26px;
+			color: white;
+			margin-left: 20px;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-weight: 600;
+		}
+		.hero{
+			position: relative;
+			height: 100vh;
+			width: 100%;
+			background-image: url("images/intro-bg.jpg");
+			background-size: contain;
+			background-position: center;
+			background-color: black;
+			background-repeat: no-repeat;
+
+			&::before{
+				content: "";
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				background-color: rgba(17, 17, 17, 0.85);
+			}
+		}
+		img{
+			position: relative;
+			border-radius: 50%;
+			display: block;
+			margin-top: 5%;
+			margin-left: auto;
+			margin-right: auto;
+			width: 15%;
+		}
+		.content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+		}
+		.centered-content{
+			text-align: justify;
+		}
+		h1, p{
+			position: relative;
+			color: white;
+		}
+
+		.linkedinbtn {
+			position:relative;
+			background-color:#07268d;
+			border-radius:28px;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-size:16px;
+			font-weight:bold;
+			padding:15px 30px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #2f6627;
+		}
+		.linkedinbtn:hover {
+			background-color:#00c9c9;
+		}
+		.linkedinbtn:active {
+			position:relative;
+			top:1px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="hero">
+	<div class="navcontainer">
+		<div class="brand"><a href="#">Fadzarar's Website</a></div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="acad_achv.html">Academic Achievements</a>
+			<a href="details.html">Details</a>
+			<a href="portfolio.html">WebP Portfolio</a>
+		</div>
+	</div>
+	<div class="content">
+		<div class="centered-content">
+			<img src="images/my_picc.jpg" />
+			<h1>Hi,<br>I'm Fadzar,<br><span style="color:#00C9C8">An all-language programmer.</span></h1>
+			<p>I've always had a keen interest in Data and Artificial Intelligence. Yet, my enthusiasm for technology extends beyond these areas—<br>I'm adaptable and ready to dive into any field within the tech domain.</p>
+			<a href="https://www.linkedin.com/in/fadzarar" class="linkedinbtn">LinkedIn</a>
+	</div></div></div>
+</body>
+</html>

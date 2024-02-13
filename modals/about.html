@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="imgmodal.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: #677381;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00C9C8;
+        }
+
+        .section1 {
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .section1-content {
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .section1-text {
+            max-width: 400px; /* Adjust the width of the text container as needed */
+            text-align: left; /* Align text to the left */
+        }
+
+        .section2 {
+            background-color: #A3CFCD;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="acad_achv.html">Academic Achievements</a>
+        <a href="details.html">Details</a>
+        <a href="portfolio.html">WebP Portfolio</a>
+    </nav>
+
+    <section class="section1">
+        <div class="section1-content">
+            <img src="images/me_christmas.jpg" class="article-img">
+            <div class="section1-text">
+                <h2 style="font-weight: 600;max-width: 650px;font-size: 30px">Who Am I?</h2>
+                <p>I am a 21 years old undergraduate student from <b>Sampoerna University</b> cohort 2021 majoring in Computer Science.</p>
+                <p>I like everything revolving the technology!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <h2>What I like and Dislike:</h2>
+        <div>
+            <h3>I Like:</h3>
+            <ul>
+                <li>Nasi Goreng</li>
+                <li>Sate</li>
+                <li>Noodles</li>
+                <li>Bakso</li>
+                <li>All foods!</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>What I Dislike:</h3>
+            <ul>
+                <li>Tofu (A little)</li>
+                <li>Sugary foods/drinks</li>
+                <li>Ikan mas</li>
+                <li>Kambing (Chewy ones)</li>
+                <li>Oily foods/drinks</li>
+            </ul>
+        </div>
+    </section>
+    <div id="modalbg" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-popup" id="imgs">
+        <div style="height: 150px;"></div>
+    </div>
+    <script src="modalexecutor.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: #4B4A54;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00C9C8;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            padding: 20px;
+            height: 100vh;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="acad_achv.html">Academic Achievements</a>
+            <a href="details.html">Details</a>
+            <a href="portfolio.html">WebP Portfolio</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="sidebar">
+            <h2>Portfolios</h2>
+            <p>And the websites can be clicked here to showcase the progresses over the course time.</p>
+        </div>
+
+        <div class="content">
+            <h2>Content</h2>
+            <p>The result's gonna show up here for the portfolios.</p>
+        </div>
+    </div>
+</body>
+</html>
